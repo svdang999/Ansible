@@ -1,0 +1,7 @@
+---
+- hosts: vm-didi-test
+  tasks:
+    - name: copy file from remote machines to local - Windows OS.
+      copy:
+        src: /tmp/copy/copy_win.txt 
+        dest: C:/tmp/copy_win.txt
