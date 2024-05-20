@@ -1,0 +1,7 @@
+---
+- hosts: aurora-linux-build-test
+  tasks:
+    - name: here we are using Ansible fetch module to copy file from remote machines to local.
+      fetch:
+        src: /tmp/test.txt
+        dest: /tmp/fetched
