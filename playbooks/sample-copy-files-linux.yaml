@@ -1,0 +1,7 @@
+---
+- hosts: vm-linux-test
+  tasks:
+    - name: copy file from remote machines to local - Linux OS.
+      copy:
+        src: /tmp/copy/copy_win.txt
+        dest: /tmp/copy/copy_win.txt ## Remote Server
