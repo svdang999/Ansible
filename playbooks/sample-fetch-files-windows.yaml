@@ -1,0 +1,7 @@
+---
+- hosts: vm-didi-test
+  tasks:
+    - name: fetch file from remote machines to local - Windows OS.
+      fetch:
+        src: C:/tmp/test_copy.txt
+        dest: /tmp/fetched
