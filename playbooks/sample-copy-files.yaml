@@ -1,3 +1,4 @@
+## Linux
 ---
 - hosts: vm-linux-test
   tasks:
@@ -5,3 +6,11 @@
       copy:
         src: /tmp/copy/copy_win.txt
         dest: /tmp/copy/copy_win.txt ## Remote Server
+
+## Windows
+- hosts: vm-didi-test
+  tasks:
+    - name: copy file from remote machines to local - Windows OS.
+      copy:
+        src: /tmp/copy/copy_win.txt 
+        dest: C:/tmp/copy_win.txt
